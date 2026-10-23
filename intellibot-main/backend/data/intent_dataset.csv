@@ -1,0 +1,29 @@
+text,intent
+"Generate response using Gemini","chat_gpt"
+"Use Gemini model to answer","chat_gpt"
+"Talk to Gemini","chat_gpt"
+
+hello,greeting
+hi,greeting
+how are you,greeting
+good morning,greeting
+what is my attendance policy,pdf_query
+show me attendance rules,pdf_query
+can you check my resume,resume_help
+analyze my resume,resume_help
+suggest a career for me,career_help
+what job should I do,career_help
+thank you,goodbye
+bye,goodbye
+text,intent
+my name is vikas,name_info
+i am rahul,name_info
+this is john,name_info
+tell me a joke,joke_request
+can you make me laugh,joke_request
+say something funny,joke_request
+what is gravity,chat_gpt
+who is elon musk,chat_gpt
+write a poem about love,chat_gpt
+explain machine learning,chat_gpt
+

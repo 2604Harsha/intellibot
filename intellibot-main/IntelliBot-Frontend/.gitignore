@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+
+# Environment Variables
+.env
+
+# VS Code settings
+.vscode/
+tempCodeRunnerFile.py
+
+# Logs & others
+*.log
+*.zip
+*.rar
+.DS_Store
+task1_pdf.txt

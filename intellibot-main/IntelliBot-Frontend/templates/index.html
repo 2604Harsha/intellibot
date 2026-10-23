@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic AI Chatbot (GPT-Powered)</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/static/style.css?v=4" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body class="dark-theme">
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button class="new-chat-btn">
+          <i class="fa-solid fa-plus"></i> New Chat
+        </button>
+      </div>
+      <div class="sidebar-content">
+        <div class="history-item active">Current Conversation</div>
+      </div>
+      <div class="sidebar-footer">
+        <button id="downloadPDF" class="action-btn">
+          <i class="fa-solid fa-file-pdf"></i> Export Chat
+        </button>
+        <button id="toggleTheme" class="action-btn">
+          <i class="fa-solid fa-moon"></i> Theme
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="chat-main">
+      <!-- Premium Animated Background -->
+      <div class="premium-bg">
+        <div class="premium-gradient"></div>
+        <div class="premium-grid"></div>
+      </div>
+      
+      <header class="chat-header">
+        <h2>Dynamic AI Chatbot <span>(GPT-Powered)</span></h2>
+      </header>
+
+      <div id="messages" class="messages-container">
+        <!-- Empty state greeting -->
+        <div class="empty-state">
+          <div class="empty-icon">🤖</div>
+          <h1>How can I help you today?</h1>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <div class="input-wrapper">
+          <button id="voiceBtn" class="icon-btn" title="Voice Input">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <input type="text" id="input" placeholder="Message Chatbot..." autocomplete="off" />
+          <button id="sendBtn" class="icon-btn send-btn" title="Send">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="disclaimer">
+          Chatbot can make mistakes. Consider verifying important information.
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <audio id="typing-sound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+  <script src="/static/script.js?v=3" defer></script>
+</body>
+</html>
